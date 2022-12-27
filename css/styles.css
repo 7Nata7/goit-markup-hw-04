@@ -1,0 +1,380 @@
+:root {
+    --first-text-color: #434455;
+    --second-text-color: #E7E9FC;
+    --first-title-color: #FFFFFF;
+    --second-title-color: #2E2F42;
+    --btn-color: #FFFFFF;
+    --first-btn-active-color: #404BBF;
+    --second-btn-background: #F4F4FD;
+    --first-logo-color: #4D5AE5;
+    --second-logo-color: #2E2F42;
+    --active-color: #4D5AE5;
+    --menu-color: #2E2F42;
+    --menu-hover-color: #434455;
+    --body-background: #FFFFFF;
+    --hero-background: #2E2F42;
+    --team-background-color: #F4F4FD;
+    --card-background: #FFFFFF;
+    --studio-footer-color: #F4F4FD;
+    --slate-color: #434455;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    background-color: var(--body-background);
+    color: var(--slate-color);
+} 
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1158px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section {
+    padding-bottom: 120px;
+}
+
+ul {
+margin: 0;
+padding-left: 0;
+}
+
+img {
+    display:block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p
+ {
+    margin: 0;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+}
+
+address {
+    font-style: normal;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+/* ------------- TOP-LINE ----------------*/
+
+.top {
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    border-bottom: 1px solid #E7E9FC;
+}
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--first-logo-color);
+    margin-right: 76px;
+}
+.studio {
+        color: var(--second-logo-color);
+}
+.navigation {
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+} 
+
+.menu-item {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--menu-color);
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: block;
+}
+.menu-item:hover,
+.menu-item:focus {  
+color: var(--active-color);
+}
+.current {
+    color: var(--active-color);
+}
+.contact {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.connection {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--slate-color);
+}
+.mail {
+    margin-right: 40px;
+}
+
+.mail:hover,
+.mail:focus {
+  color: var(--active-color);  
+}
+
+.phone {
+    font-weight: 400;
+}
+.phone:hover,
+.phone:focus {
+    color: var(--active-color);
+}
+/* --------------HERO------------- */
+.hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ground {
+background-color: var(--hero-background);
+}
+.main-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    color: var(--first-title-color);
+    margin: 0 auto 48px;
+    width: 494px;
+}
+.btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+.first-btn {
+    min-width: 169px;
+    height: 56px;
+    line-height: 1.19;
+    background: var(--active-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    color: var(--btn-color);
+}
+.first-btn:hover,
+.first-btn:focus {
+    background-color: var(--first-btn-active-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.first-btn:active {
+    background-color: var(--first-btn-active-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+/* --------------------ADVANTAGES--------------------- */
+.advantages {
+    padding-top: 120px;
+}
+
+.visually-hidden {
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.adv-list {
+    gap: 24px;
+    display: flex;
+}
+
+.adv-item {
+}
+
+.title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--second-title-color);
+    margin-bottom: 8px;
+}
+
+.adv-text {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--first-text-color);
+}
+
+/* ------------------ LIST OF DOING--------------------- */
+
+.heading {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--second-title-color);
+    margin-bottom: 72px;
+}
+
+.pic-doing {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+/* ------------------OUR TEAM--------------------- */
+
+.team {
+    background-color: var(--team-background-color);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 120px;
+}
+
+.card-general {
+    display: flex;
+    gap: 24px;
+}
+
+.team-card {
+    background-color: var(--card-background);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+    width: 264px;
+}
+.card-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--second-title-color);
+}
+.card-title {
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--first-text-color);
+}
+
+.space-card {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.logo-footer {
+line-height: 1.33;
+margin-bottom: 16px;
+}
+
+.studio-footer {
+    color: var(--studio-footer-color);
+}
+.text-footer {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--second-text-color);
+    width: 264px;
+    margin-top: 16px;
+}
+/*-------------- PAGE 2 PORTFOLIO ----------------- */
+
+.filters {
+    padding-top: 96px;
+}
+
+.filters_btn {
+margin-bottom: 72px;
+display: flex;
+gap: 24px;
+justify-content: center;
+}
+
+/* -------------------- BUTTONS -------------------- */
+
+.second-btn {
+    line-height: 1.5;
+    background-color: var(--second-btn-background);
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+    color: var(--active-color);
+    padding: 12px 24px;
+}
+
+.second-btn:hover,
+.second-btn:focus {
+    background-color: var(--active-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: var(--btn-color);
+    border-color: var(--active-color);
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+
+.gallery-img {
+    background-color: var(--card-background);
+    border: 0.5px solid #F4F4FD;
+    flex-basis: calc((100% - 48px) / 3);
+}
+
+.gallery-text {
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--first-text-color);
+    
+}
+
+.gallery-p {
+    padding: 32px 16px;
+}
+
