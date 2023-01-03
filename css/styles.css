@@ -41,6 +41,7 @@ body {
 
 .section {
     padding-bottom: 120px;
+    padding-top: 96px;
 }
 
 ul {
@@ -99,8 +100,6 @@ address {
 }
 .studio {
         color: var(--second-logo-color);
-}
-.navigation {
 }
 
 .header-container {
@@ -241,14 +240,9 @@ max-width: 1440px;
     padding-bottom: 24px;
 }
 
-.adv-pic {}
-
 .adv-list {
     gap: 24px;
     display: flex;
-}
-
-.adv-item {
 }
 
 .title {
@@ -268,6 +262,9 @@ max-width: 1440px;
 
 /* ------------------ LIST OF DOING--------------------- */
 
+.works {
+    padding-top: 0px;
+}
 .heading {
     font-weight: 700;
     font-size: 36px;
@@ -331,6 +328,7 @@ max-width: 1440px;
     width: 40px;
     height: 40px;
 }
+
 .soc-link {
     width: 100%;
     height: 100%;
@@ -339,9 +337,11 @@ max-width: 1440px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 12px;
 }
+
  .soc-icon {
-    fill: #FFFFFF;
+    fill: #F4F4FD;
  }
 .soc-link:hover,
 .soc-link:focus {
@@ -372,21 +372,25 @@ max-width: 1440px;
     border-radius: 4px;
 }
 
-.company:hover,
+/* .company:hover,
 .company:focus {
 border: 1px solid var(--first-active-color);
-}
-
-.company-link {}
+} */
 
 .company-icon {
     fill: #AFB1B8;
     margin: 16px 32px;
 }
 
-.company-icon:hover,
-.company-icon:focus {
+/* .company-icon:hover,
+.company-icon:focus {   
     fill: var(--first-active-color);
+} */
+
+.customers-card .company-link:hover,
+.customers-card .company-link:focus {
+    color: var(--first-active-color);
+    border-color: var(--first-active-color);
 }
 
 /* ------------------- FOOTER --------------------- */
@@ -398,6 +402,18 @@ border: 1px solid var(--first-active-color);
 
 .footer-ground {
     background-color: var(--footer-background)
+}
+
+.two-boxes {
+    display: flex;
+    gap: 120px;
+}
+.first-footer-box {
+    max-width: 264px;
+}
+
+.second-footer-box {
+    max-width: 208;
 }
 
 .logo-footer {
@@ -417,8 +433,29 @@ margin-bottom: 16px;
 }
 
 .title-footer {
+    line-height: 1.5;
     color: #FFFFFF;
+    margin-bottom: 16px;
+    
 }
+
+.soc-contacts-footer {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.soc-link-footer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+
 /*-------------- PAGE 2 PORTFOLIO ----------------- */
 
 .filters {
@@ -458,8 +495,14 @@ justify-content: center;
 
 .gallery-img {
     background-color: var(--card-background);
-    border: 0.5px solid #F4F4FD;
     flex-basis: calc((100% - 48px) / 3);
+    border: 1px solid #E7E9FC;
+   
+}
+
+.gallery-img :hover,
+.gallery-img :focus {
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .gallery-text {
